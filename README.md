@@ -1,27 +1,39 @@
 # 🚀 AI Crypto Prediction Bot
 
-This is an AI-based trading assistant that predicts next candle direction (UP/DOWN).
+An AI-powered trading assistant that predicts next candle direction using RSI and probability logic.
 
 ## 🔥 Features
-- Simple prediction logic
-- Expandable with indicators (RSI, VWAP)
-- Beginner-friendly project
+- RSI-based prediction system
+- Basic accuracy tracking
+- Expandable architecture
+- Beginner-friendly
 
 ## 🧠 Tech Stack
 - Python
 - Pandas, NumPy
 
-## ⚙️ How to Run
+## ⚙️ How it Works
+- Calculates RSI from price data
+- Uses thresholds:
+  - RSI < 30 → UP (oversold)
+  - RSI > 70 → DOWN (overbought)
+- Tracks prediction accuracy
+
+## ⚙️ Run
 pip install -r requirements.txt  
 python main.py
 
-## 📊 Use Case
-Helps traders make quick decisions using basic prediction logic.
+## 📊 Output Example
+Prediction 1: UP | Actual: DOWN  
+Prediction 2: DOWN | Actual: DOWN  
+
+Accuracy: 55%
 
 ## 📌 Future Plans
-- Add RSI & real indicators
-- Improve prediction accuracy
-- Add automation & alerts
+- Integrate Binance API (real data)
+- Add VWAP & divergence
+- Telegram alerts
+- Polymarket integration
 
 ## 🤝 Open Source
-This project is open for contributions.
+Open for contributions and improvements.
